@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MyCustomFont';  /* 您可以选择任何您喜欢的字体名称 */
+    src: url('font/YingbiKaiti.ttf') format('truetype');  /* 指向 TTF 文件的路径 */
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif !important;  /* 使用自定义字体作为首选字体 */
+}
+.share{
+    position: absolute;
+    right:10px;
+    top: 10px;
+    /*padding: 20px;*/
+    /*background: url("./images/icon/shareWhite.png") no-repeat;*/
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+
+}
+/*.douYu{*/
+/*    font-family: "douyu";*/
+/*}*/
+.bottom{
+   /* position: absolute;
+    bottom: 3px;*/
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 375px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.linkPopup{
+    width: 20vh;
+    height: 20vh;
+    padding: 20px;
+}
+.shareMsg{
+    text-align: center;
+    font-weight: bold
+}
+.shareLink{
+    text-align: center;
+    font-weight: lighter;
+    line-height: 50px
+}
+.shareBtn{
+    padding: 20px
+}
+.shareBtnPopup{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+.imgPopup{
+    height: 80vh;
+}
+.year-title{
+    font-size: 72px;
+    line-height: 1.37em;
+    color: #2266d8;
+}
+p{
+    line-height: 1em;
+    font-size: 55px;
+    color: #2266d8;
+}
+.data{
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1em;
+    color: #F9DAA4
+}
+.mt-10{
+    margin-top: 1.67em;
+}
