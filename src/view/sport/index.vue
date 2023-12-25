@@ -50,16 +50,34 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
-          <div class="mt-10">
-            <p>学习和工作之外，身体和锻炼同样重要！</p>
-            <p>你预约体育场馆次数是<span class="data">{{ annualData.data25 }}</span>次</p>
-            <p>全校排名<span class="data">{{ annualData.data26 }}</span>名</p>
+          <div v-if="annualData.data25 !== '#N/A' && annualData.data26 !== '#N/A'">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>学习和工作之外，身体和锻炼同样重要！</p>
+              <p>你预约体育场馆次数是 <span class="data">{{ annualData.data25 }}</span> 次</p>
+              <p>全校排名 <span class="data">{{ annualData.data26 }}</span> 名</p>
+            </div>
+            <div class="mt-10">
+              <p>运动是青春的调味剂</p>
+              <p>愿你的每一年</p>
+              <p>都有强健的体魄和不竭的活力</p>
+            </div>
           </div>
-          <div class="mt-10">
-            <p>运动是青春的调味剂</p>
-            <p>愿你的每一年</p>
-            <p>都有强健的体魄和不竭的活力</p>
+          <!--  兜底文案  -->
+          <div v-if="annualData.data25 === '#N/A' || annualData.data26 === '#N/A'">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>篮球场挥洒汗水</p>
+              <p>如梭岁月中</p>
+              <p>绿茵地热情洋溢</p>
+            </div>
+            <div class="mt-10">
+              <p>光阴荏苒间</p>
+              <p>暖阳正好</p>
+              <p>风过林梢</p>
+              <p>和喜爱的运动一起</p>
+              <p>去享受生活吧</p>
+            </div>
           </div>
         </div>
       </div>
@@ -83,6 +101,6 @@ export default {
   text-align: end;
 }
 p{
-  color: #fdfcfc;
+  color: #000000;
 }
 </style>

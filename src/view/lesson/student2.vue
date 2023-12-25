@@ -50,18 +50,29 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
-          <div class="mt-10">
-            <p>你上课最多的教学楼是<span class="data">{{ annualData.data5 }}</span></p>
-            <p>累计上过<span class="data">{{ annualData.data6 }}</span>节课</p>
+          <div v-if="annualData.data5 !== '#N/A' && annualData.data6 !== '#N/A' && annualData.data7 !== '#N/A' && annualData.data8 !== '#N/A' ">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>你上课最多的教学楼是 <span class="data">{{ annualData.data5 }}</span></p>
+              <p>累计上过 <span class="data">{{ annualData.data6 }}</span> 节课</p>
+            </div>
+            <div class="mt-10">
+              <p>你上课最多的教室是 <span class="data">{{ annualData.data7 }}</span></p>
+              <p>累计上过 <span class="data">{{ annualData.data8 }}</span> 节课</p>
+            </div>
           </div>
-          <div class="mt-10">
-            <p>你上课最多的教室是<span class="data">{{ annualData.data7 }}</span></p>
-            <p>累计上过<span class="data">{{ annualData.data8 }}</span>节课</p>
-          </div>
-          <div class="mt-10">
-            <p>一分耕耘一分收获</p>
-            <p>这些数字，见证你的努力！</p>
+          <!--  兜底文案  -->
+          <div v-if="annualData.data5 === '#N/A' || annualData.data6 === '#N/A' || annualData.data7 === '#N/A' || annualData.data8 === '#N/A' ">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>一分耕耘一分收获</p>
+              <p>这些数字，见证你的努力！</p>
+            </div>
+            <div class="mt-10">
+              <p>光阴变化之际</p>
+              <p>不变的是你风雨兼程</p>
+              <p>奔向每一节课的身影</p>
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +93,7 @@ export default {
   padding: 50px 80px;
 }
 .girl-con{
-  text-align: end;
+  text-align: left;
 }
 p{
   color: #2266D8;

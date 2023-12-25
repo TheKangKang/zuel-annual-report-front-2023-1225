@@ -50,16 +50,35 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
-          <div class="mt-10">
-            <p>你在图书馆年度预约次数为<span class="data">{{ annualData.data19 }}</span>次</p>
-            <p>自习累计时长达<span class="data">{{ annualData.data20 }}</span>小时</p>
-            <p>排名<span class="data">{{ annualData.data21 }}</span></p>
+          <div v-if="annualData.data19 !== '#N/A' && annualData.data20 !== '#N/A' && annualData.data21 !== '#N/A' &&
+          annualData.data22 !== '#N/A' && annualData.data23 !== '#N/A' && annualData.data24 !== '#N/A'" class="mt-10">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>你在图书馆年度预约次数为<span class="data">{{ annualData.data19 }}</span>次</p>
+              <p>自习累计时长达<span class="data">{{ annualData.data20 }}</span>小时</p>
+              <p>排名<span class="data">{{ annualData.data21 }}</span></p>
+            </div>
+            <div class="mt-10">
+              <p>你的进馆次数为<span class="data">{{ annualData.data22 }}</span>次</p>
+              <p>一共借阅了<span class="data">{{ annualData.data23 }}</span>本图书</p>
+              <p>排名<span class="data">{{ annualData.data24 }}</span></p>
+            </div>
           </div>
-          <div class="mt-10">
-            <p>你的进馆次数为<span class="data">{{ annualData.data22 }}</span>次</p>
-            <p>一共借阅了<span class="data">{{ annualData.data23 }}</span>本图书</p>
-            <p>排名<span class="data">{{ annualData.data24 }}</span></p>
+          <!--  兜底文案  -->
+          <div v-if="annualData.data19 === '#N/A' || annualData.data20 === '#N/A' || annualData.data21 === '#N/A' ||
+            annualData.data22 === '#N/A' || annualData.data23 === '#N/A' || annualData.data24 === '#N/A'" class="mt-10">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>“天下第一好事，还是读书”</p>
+              <p>每一页的“清风明月”</p>
+              <p>当“知你心”</p>
+            </div>
+            <div class="mt-10">
+              <p>无论是阅读所爱</p>
+              <p>还是复习备考</p>
+              <p>风里雨里</p>
+              <p>图书馆始终在等你</p>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +99,7 @@ export default {
   padding: 50px 80px;
 }
 .girl-con{
-  text-align: end;
+  text-align: left;
 }
 p{
   color: #fdfcfc;

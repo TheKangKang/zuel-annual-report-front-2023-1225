@@ -75,10 +75,11 @@ p{
 }
 .data{
     font-weight: bold;
-    font-size: 58px;
+    font-size: 80px;
     line-height: 1em;
-    color: #F9DAA4
+    color: #584dec
 }
 .mt-10{
-    margin-top: 1.67em;
+    margin-top: 0px;
+    margin-left: 1.67em;
 }

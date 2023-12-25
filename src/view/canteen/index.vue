@@ -50,18 +50,36 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
-          <div class="mt-10">
-            <p>你的校园卡总充值额为<span class="data">{{ annualData.data9 }}</span>元</p>
-            <p>超过了<span class="data">{{ annualData.data10 }}</span>的zuelers</p>
+          <div v-if="annualData.data9 !=='#N/A' && annualData.data10 !== '#N/A' && annualData.data11 !== '#N/A'
+            && annualData.data12 !== '#N/A' && annualData.data13 !== '#N/A' && annualData.data14 !== '#N/A'" class="mt-10">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>你的校园卡总充值额为 <span class="data">{{ annualData.data9 }}</span> 元</p>
+              <p>超过了 <span class="data">{{ annualData.data10 }}</span> 的zuelers</p>
+            </div>
+            <div class="mt-10">
+              <p>你消费最多的食堂是 <span class="data">{{ annualData.data11 }}</span>，</p>
+              <p>共计花销 <span class="data">{{ annualData.data12 }}</span> 元</p>
+            </div>
+            <div class="mt-10">
+              <p><span class="data">{{ annualData.data13 }}</span></p>
+              <p>你单日消费了 <span class="data">{{ annualData.data14 }}</span> 元</p>
+            </div>
           </div>
-          <div class="mt-10">
-            <p>你消费最多的食堂是<span class="data">{{ annualData.data11 }}</span>，</p>
-            <p>共计花销<span class="data">{{ annualData.data12 }}</span></p>
-          </div>
-          <div class="mt-10">
-            <p><span class="data">{{ annualData.data13 }}</span></p>
-            <p>你单日消费了<span class="data">{{ annualData.data14 }}</span>元</p>
+          <!--  兜底文案  -->
+          <div v-if="annualData.data9 ==='#N/A' || annualData.data10 === '#N/A' || annualData.data11 === '#N/A'
+            || annualData.data12 === '#N/A' || annualData.data13 === '#N/A' || annualData.data14 === '#N/A'" class="mt-10">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>拉长耳朵,提高警觉</p>
+              <p>食堂是不是出新菜品啦</p>
+              <p>神经细胞,全面戒备</p>
+            </div>
+            <div class="mt-10">
+              <p>GDP提高需要吃货的消费</p>
+              <p>还等什么</p>
+              <p>去打卡美食吧</p>
+            </div>
           </div>
         </div>
       </div>

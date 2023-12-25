@@ -54,11 +54,11 @@ const store = new Vuex.Store({
                 resolve()
             })
         },
-        // 模拟数据，实际不能用
+        // 模拟数据，实际不能用，男1女2，老师1学生2
         setInfo({ commit }) {
             const info = {
-                type: 1,
-                gender: 2,
+                type: 2,
+                gender: 1,
                 personType: 3
             }
             const annualData = {
@@ -78,7 +78,7 @@ const store = new Vuex.Store({
                 data14: '141414',
                 data15: '151515',
                 data16: '161616',
-                data17: '17171',
+                data17: '171717',
                 data18: '181818',
                 data19: '191919',
                 data20: '202020',
@@ -88,6 +88,32 @@ const store = new Vuex.Store({
                 data24: '242424',
                 data25: '252525',
                 data26: '262626'
+                // data1: '#N/A',
+                // data2: '#N/A',
+                // data3: '#N/A',
+                // data4: '#N/A',
+                // data5: '#N/A',
+                // data6: '#N/A',
+                // data7: '#N/A',
+                // data8: '#N/A',
+                // data9: '#N/A',
+                // data10: '#N/A',
+                // data11: '#N/A',
+                // data12: '#N/A',
+                // data13: '#N/A',
+                // data14: '#N/A',
+                // data15: '#N/A',
+                // data16: '#N/A',
+                // data17: '#N/A',
+                // data18: '#N/A',
+                // data19: '#N/A',
+                // data20: '#N/A',
+                // data21: '#N/A',
+                // data22: '#N/A',
+                // data23: '#N/A',
+                // data24: '#N/A',
+                // data25: '#N/A',
+                // data26: '#N/A'
             }
             commit('SET_HAS_GET_INFO', true)
             commit('SET_INFO', info)

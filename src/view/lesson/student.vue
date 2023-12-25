@@ -30,7 +30,7 @@ export default {
   methods: {
     changePage() {
       this.$router.push({
-        path: '/student2'
+        path: '/lesson/building'
       })
     }
   }
@@ -50,20 +50,31 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
-          <div class="mt-10">
-            <p>你一共上过<span class="data">{{ annualData.data1 }}</span>节课</p>
-            <p>累计<span class="data">{{ annualData.data2 }}</span>个小时</p>
+          <div v-if="annualData.data1 !== '#N/A' && annualData.data2 !== '#N/A' && annualData.data3 !== '#N/A' && annualData.data4 !== '#N/A'" class="mt-10">
+            <p class="year-title">2023年</p>
+            <p>你一共上过 <span class="data">{{ annualData.data1 }}</span> 节课</p>
+            <p>累计 <span class="data">{{ annualData.data2 }}</span> 个小时</p>
             <p>其中有</p>
             <p>
-              <span class="data">{{ annualData.data3 }}</span>节早八
-              <span class="data">{{ annualData.data4 }}</span>节晚课
+              <span class="data">{{ annualData.data3 }}</span> 节早八<p>
+              <span class="data">{{ annualData.data4 }}</span> 节晚课
             </p>
           </div>
-          <div class="mt-10">
-            <p>这一年，</p>
-            <p>你不断学习新知识</p>
-            <p>在知识的海洋里遨游</p>
+          <!--  兜底文案  -->
+          <div v-if="annualData.data1 === '#N/A' || annualData.data2 === '#N/A' || annualData.data3 === '#N/A' || annualData.data4 === '#N/A'"
+               style="margin-top:100px; margin-left: 100px" class="mt-10">
+            <div class="mt-10">
+              <p class="year-title">2023年</p>
+              <p>这一年</p>
+              <p>你不断学习新知识</p>
+              <p>在知识的海洋里遨游</p>
+            </div>
+            <div class="mt-10">
+              <p>从酷夏到金秋</p>
+              <p>由金秋入严冬</p>
+              <p>时针滴滴答答</p>
+              <p>学习的日子总是匆匆</p>
+            </div>
           </div>
         </div>
       </div>
