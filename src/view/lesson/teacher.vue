@@ -50,10 +50,10 @@ export default {
              data-aos-offset="0"
              data-aos-duration="800"
              id="myText">
-          <p class="year-title">2023年</p>
           <div v-if="annualData.data1 !=='#N/A' && annualData.data2 !== '#N/A' && annualData.data3 !== '#N/A' && annualData.data4 !=='#N/A'
               && annualData.data5 !== '#N/A' && annualData.data6 !== '#N/A' && annualData.data7 !== '#N/A' && annualData.data8 !== '#N/A'" class="mt-10">
             <div class="mt-10">
+              <p class="year-title">2023年</p>
               <p>你一共上过 <span class="data">{{ annualData.data1 }}</span> 节课</p>
               <p>累计 <span class="data">{{ annualData.data2 }}</span> 个小时</p>
               <p>其中有 <span class="data">{{ annualData.data3 }}</span> 节早八，<span class="data">{{ annualData.data4 }}</span> 节晚课</p>

@@ -1,15 +1,17 @@
 <template>
   <div id="app">
     <router-view />
+    <Music></Music>
   </div>
 </template>
 
 <script>
 
 import {correctPullDown} from "@/utils/global";
-
+import Music from "@/components/Music";
 export default {
   name: 'App',
+  components: {Music},
   mounted() {
     correctPullDown();
   }

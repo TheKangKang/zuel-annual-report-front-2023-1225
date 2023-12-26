@@ -90,10 +90,12 @@ export default {
 .library-girl{
   background: url("../../assets/images/library/girl.jpg") no-repeat;
   background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .library-boy{
   background: url("../../assets/images/library/boy.jpg") no-repeat;
   background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .boy-con{
   padding: 50px 80px;

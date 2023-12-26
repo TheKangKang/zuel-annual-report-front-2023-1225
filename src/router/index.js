@@ -82,6 +82,12 @@ const createRouter = () => new Router({
             name: 'End',
             component: () => import('@/view/home/end.vue')
         },
+        // 结尾2
+        {
+            path: '/end2',
+            name: 'End2',
+            component: () => import('@/view/home/end2.vue')
+        },
         {
             path: '/cas/login',
             name: 'CasLogin',

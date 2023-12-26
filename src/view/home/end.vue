@@ -8,12 +8,18 @@ export default {
         'height': document.documentElement.clientHeight + 'px'
       }
     }
+  },
+  methods: {
+    changePage() {
+      this.$router.push({ path: '/end2' })
+    }
   }
 }
 </script>
 
 <template>
-  <div class="end" :style="cssVar"></div>
+  <div class="end" :style="cssVar" v-swipeup="changePage" v-swipedown="previousPage">
+  </div>
 </template>
 
 <style scoped>
