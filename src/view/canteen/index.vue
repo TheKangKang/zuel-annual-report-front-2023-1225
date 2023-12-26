@@ -42,7 +42,7 @@ export default {
     <!--  假设gender 1 为男 2 为女  -->
     <div :class="gender === 1 ? 'canteen-boy' : 'canteen-girl'" :style="cssVar" @click="changePage">
       <!--     因为设计稿中男女的文字布局有所不一样，所以需要判断性别选择样式 -->
-      <div class="canteen-con" :class="gender === 1 ? '' : 'girl-con'">
+      <div class="canteen-con" :class="gender === 2 ? '' : 'girl-con'">
         <!--       这里是动画的效果，参考aos官网https://michalsnik.github.io/aos/ -->
         <div :data-aos="gender === 1 ? 'fade-right' : 'fade-left'"
              data-aos-easing="ease-in-back"
