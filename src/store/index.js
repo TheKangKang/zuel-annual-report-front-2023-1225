@@ -57,7 +57,7 @@ const store = new Vuex.Store({
         // 模拟数据，实际不能用，男1女2，老师1学生2
         setInfo({ commit }) {
             const info = {
-                type: 1,
+                type: 2,
                 gender: 1,
                 personType: 3
             }

@@ -60,6 +60,9 @@ export default {
               <span class="data">{{ annualData.data3 }}</span> 节早八<p>
               <span class="data">{{ annualData.data4 }}</span> 节晚课
             </p>
+            <p>这一年</p>
+            <p>你不断学习新知识</p>
+            <p>在知识的海洋里遨游</p>
           </div>
           <!--  兜底文案  -->
           <div v-if="annualData.data1 === '#N/A' || annualData.data2 === '#N/A' || annualData.data3 === '#N/A' || annualData.data4 === '#N/A'"

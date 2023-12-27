@@ -60,6 +60,8 @@ export default {
             <div class="mt-10">
               <p>你上课最多的教室是 <span class="data">{{ annualData.data7 }}</span></p>
               <p>累计上过 <span class="data">{{ annualData.data8 }}</span> 节课</p>
+              <p>一分耕耘一分收获</p>
+              <p>这些数字，见证你的努力！</p>
             </div>
           </div>
           <!--  兜底文案  -->
