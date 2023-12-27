@@ -59,7 +59,7 @@ export default {
               <p>超过了 <span class="data">{{ annualData.data10 }}</span> 的zuelers</p>
             </div>
             <div class="mt-10">
-              <p>你消费最多的食堂是 <span class="data">{{ annualData.data11 }}</span>，</p>
+              <p>你消费最多的食堂是 <span class="data">{{ annualData.data11 }}</span></p>
               <p>共计花销 <span class="data">{{ annualData.data12 }}</span> 元</p>
             </div>
             <div class="mt-10">

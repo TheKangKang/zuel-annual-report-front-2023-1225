@@ -54,7 +54,8 @@ export default {
             <div class="mt-10">
               <br/>
               <p class="year-title">2023年</p>
-              <p>学习和工作之外，身体和锻炼同样重要！</p>
+              <p>学习和工作之外</p>
+              <p>身体和锻炼同样重要！</p>
               <p>你预约体育场馆次数是 <span class="data">{{ annualData.data25 }}</span> 次</p>
               <p>全校排名 <span class="data">{{ annualData.data26 }}</span> 名</p>
             </div>
