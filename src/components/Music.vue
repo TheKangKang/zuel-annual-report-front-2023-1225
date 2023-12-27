@@ -48,12 +48,12 @@ export default {
 
 <style lang="less" scoped>
 .isOn{
-  width: 28px;
-  height: 28px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   z-index: 2000;
-  top: 30px;
-  right: 30px;
+  top: 50px;
+  right: 50px;
   -webkit-animation: rotating 1.2s linear infinite;
   animation: rotating 5s linear infinite;
   background: url("../assets/images/icon/music.png") 0 0 no-repeat;
@@ -68,12 +68,12 @@ export default {
   to { -webkit-transform: rotate(360deg) }
 }
 .isOff{
-  width: 28px;
-  height: 28px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   z-index: 2000;
-  top: 30px;
-  right: 30px;
+  top: 50px;
+  right: 50px;
   background: url("../assets/images/icon/music.png") 0 0px no-repeat;
   background-size:100%;
 }
