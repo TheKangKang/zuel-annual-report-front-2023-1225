@@ -52,6 +52,7 @@ export default {
              id="myText">
           <div v-if="annualData.data15 !== '#N/A' && annualData.data16 !== '#N/A' && annualData.data17 !== '#N/A' && annualData.data18 !== '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>你一共连接校园网 <span class="data">{{ annualData.data15 }}</span> 小时</p>
               <p>累计使用 <span class="data">{{ annualData.data16 }}</span> G</p>
@@ -69,14 +70,13 @@ export default {
           <!--  兜底文案  -->
           <div v-if="annualData.data15 === '#N/A' || annualData.data16 === '#N/A' || annualData.data17 === '#N/A' || annualData.data18 === '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
-              <p>技术助力</p>
-              <p>智慧光芒</p>
+              <p>技术助力 智慧光芒</p>
               <p>照亮求知道路</p>
             </div>
             <div class="mt-10">
-              <p>宽带穿梭</p>
-              <p>信息无阻</p>
+              <p>宽带穿梭 信息无阻</p>
               <p>共享知识盛宴</p>
               <p>熬夜开黑还是学习工作</p>
               <p>校园网都始终陪伴着你</p>

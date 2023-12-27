@@ -52,6 +52,7 @@ export default {
              id="myText">
           <div v-if="annualData.data5 !== '#N/A' && annualData.data6 !== '#N/A' && annualData.data7 !== '#N/A' && annualData.data8 !== '#N/A' ">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>你上课最多的教学楼是 <span class="data">{{ annualData.data5 }}</span></p>
               <p>累计上过 <span class="data">{{ annualData.data6 }}</span> 节课</p>
@@ -64,6 +65,7 @@ export default {
           <!--  兜底文案  -->
           <div v-if="annualData.data5 === '#N/A' || annualData.data6 === '#N/A' || annualData.data7 === '#N/A' || annualData.data8 === '#N/A' ">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>一分耕耘一分收获</p>
               <p>这些数字，见证你的努力！</p>

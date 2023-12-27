@@ -52,6 +52,7 @@ export default {
              id="myText">
           <div v-if="annualData.data25 !== '#N/A' && annualData.data26 !== '#N/A'">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>学习和工作之外，身体和锻炼同样重要！</p>
               <p>你预约体育场馆次数是 <span class="data">{{ annualData.data25 }}</span> 次</p>
@@ -66,6 +67,7 @@ export default {
           <!--  兜底文案  -->
           <div v-if="annualData.data25 === '#N/A' || annualData.data26 === '#N/A'">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>篮球场挥洒汗水</p>
               <p>如梭岁月中</p>
@@ -73,8 +75,7 @@ export default {
             </div>
             <div class="mt-10">
               <p>光阴荏苒间</p>
-              <p>暖阳正好</p>
-              <p>风过林梢</p>
+              <p>暖阳正好 风过林梢</p>
               <p>和喜爱的运动一起</p>
               <p>去享受生活吧</p>
             </div>

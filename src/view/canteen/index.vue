@@ -53,6 +53,7 @@ export default {
           <div v-if="annualData.data9 !=='#N/A' && annualData.data10 !== '#N/A' && annualData.data11 !== '#N/A'
             && annualData.data12 !== '#N/A' && annualData.data13 !== '#N/A' && annualData.data14 !== '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>你的校园卡总充值额为 <span class="data">{{ annualData.data9 }}</span> 元</p>
               <p>超过了 <span class="data">{{ annualData.data10 }}</span> 的zuelers</p>
@@ -70,10 +71,11 @@ export default {
           <div v-if="annualData.data9 ==='#N/A' || annualData.data10 === '#N/A' || annualData.data11 === '#N/A'
             || annualData.data12 === '#N/A' || annualData.data13 === '#N/A' || annualData.data14 === '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/><br/><br/><br/>
               <p class="year-title">2023年</p>
-              <p>拉长耳朵,提高警觉</p>
+              <p>拉长耳朵 提高警觉</p>
               <p>食堂是不是出新菜品啦</p>
-              <p>神经细胞,全面戒备</p>
+              <p>神经细胞 全面戒备</p>
             </div>
             <div class="mt-10">
               <p>GDP提高需要吃货的消费</p>

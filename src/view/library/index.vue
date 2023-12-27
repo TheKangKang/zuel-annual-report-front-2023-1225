@@ -53,6 +53,7 @@ export default {
           <div v-if="annualData.data19 !== '#N/A' && annualData.data20 !== '#N/A' && annualData.data21 !== '#N/A' &&
           annualData.data22 !== '#N/A' && annualData.data23 !== '#N/A' && annualData.data24 !== '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>你在图书馆年度预约次数为<span class="data">{{ annualData.data19 }}</span>次</p>
               <p>自习累计时长达<span class="data">{{ annualData.data20 }}</span>小时</p>
@@ -68,6 +69,7 @@ export default {
           <div v-if="annualData.data19 === '#N/A' || annualData.data20 === '#N/A' || annualData.data21 === '#N/A' ||
             annualData.data22 === '#N/A' || annualData.data23 === '#N/A' || annualData.data24 === '#N/A'" class="mt-10">
             <div class="mt-10">
+              <br/>
               <p class="year-title">2023年</p>
               <p>“天下第一好事，还是读书”</p>
               <p>每一页的“清风明月”</p>
