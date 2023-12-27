@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <div class="end" :style="cssVar" v-swipeup="changePage" v-swipedown="previousPage">
+  <div class="end" :style="cssVar" v-swipeup="changePage" v-swipedown="previousPage" @click="changePage">
   </div>
 </template>
 
