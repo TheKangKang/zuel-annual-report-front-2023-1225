@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'MyCustomFont';  /* 您可以选择任何您喜欢的字体名称 */
-    src: url('font/HYSongYunLangHeiW-1.ttf') format('truetype');  /* 指向 TTF 文件的路径 */
+    src: url('font/ziti.ttf') format('truetype');  /* 指向 TTF 文件的路径 */
 }
 
 body {
-    font-family: 'MyCustomFont', sans-serif !important;  /* 使用自定义字体作为首选字体 */
+    font-family: 'ziti', sans-serif !important;  /* 使用自定义字体作为首选字体 */
 }
 .share{
     position: absolute;
@@ -15,7 +15,6 @@ body {
     background-size: 100% 100%;
     width: 25px;
     height: 25px;
-
 }
 /*.douYu{*/
 /*    font-family: "douyu";*/
@@ -69,18 +68,24 @@ body {
     color: #2266d8;
 }
 p{
+    font-family: ziti;
     line-height: 1em;
-    font-size: 55px;
+    font-size: 50px;
     color: #2266d8;
 }
 .data{
     font-weight: bold;
-    font-size: 80px;
+    font-size:70px;
     line-height: 1em;
-    color: #584dec
+    color: #1f1e38
 }
 .mt-10{
-    margin-top: 10px;
+    font-family: YingbiKaiti;
+    padding-top:140px ;
     margin-left: 1.77em;
     margin-right: 1.77em;
+    transform: rotate(-6deg);
+}
+#test{
+    text-align: center;
 }

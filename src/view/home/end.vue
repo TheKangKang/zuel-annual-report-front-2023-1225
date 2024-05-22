@@ -9,16 +9,12 @@ export default {
       }
     }
   },
-  methods: {
-    changePage() {
-      this.$router.push({ path: '/end2' })
-    }
-  }
+  
 }
 </script>
 
 <template>
-  <div class="end" :style="cssVar" v-swipeup="changePage" v-swipedown="previousPage" @click="changePage">
+  <div class="end" :style="cssVar">
   </div>
 </template>
 

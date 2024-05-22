@@ -11,83 +11,59 @@ Router.prototype.push = function push(location, onResolve, onReject) {
 
 const createRouter = () => new Router({
     routes: [
-        // 首页
+
         {
             path: '/',
-            name: 'home',
             component: () => import('@/view/home/index')
         },
-        // 首页第二页
+
         {
-            path: '/page',
-            name: 'Page',
-            component: () => import('@/view/page')
-        },
-        // 教师上课篇
-        {
-            path: '/lesson/teacher',
-            name: 'LessonTeacher',
-            component: () => import('@/view/lesson/teacher.vue')
-        },
-        // 学生上课篇
-        {
-            path: '/lesson/student',
-            name: 'LessonStudent',
-            component: () => import('@/view/lesson/student.vue')
+            path: '/page2',
+            component: () => import('@/view/admission/admission.vue')
         },
         {
-            path: '/lesson/building',
-            name: 'LessonBuilding',
-            component: () => import('@/view/lesson/student2.vue')
+            path: '/page3',
+            component: () => import('@/view/military')
         },
-        // 食堂篇
         {
-            path: '/canteen',
-            name: 'Canteen',
-            component: () => import('@/view/canteen')
+            path: '/page4',
+            component: () => import('@/view/dormitory')
         },
-        // 校园网篇
         {
-            path: '/network',
-            name: 'Network',
-            component: () => import('@/view/network')
+            path: '/page5',
+            component: () => import('@/view/test')
         },
-        // 图书馆篇
         {
-            path: '/library',
-            name: 'Library',
-            component: () => import('@/view/library')
+            path: '/page6',
+            component: () => import('@/view/sports')
         },
-        // 运动篇
         {
-            path: '/sport',
-            name: 'Sport',
-            component: () => import('@/view/sport')
+            path: '/page65',
+            component: () => import('@/view/sports/index2')
         },
-        // 总结引入
         {
-            path: '/person/intro',
-            name: 'PersonIntro',
-            component: () => import('@/view/home/intro.vue')
+            path: '/page7',
+            component: () => import('@/view/lesson')
         },
-        // 个人形象
         {
-            path: '/person/page',
-            name: 'Person',
-            component: () => import('@/view/page/person.vue')
+            path: '/page8',
+            component: () => import('@/view/food')
         },
-        // 结尾
+        {
+            path: '/page9',
+            component: () => import('@/view/scenery')
+        },
+        {
+            path: '/page10',
+            component: () => import('@/view/sing')
+        },
         {
             path: '/end',
-            name: 'End',
-            component: () => import('@/view/home/end.vue')
+            component: () => import('@/view/home/end')
         },
-        // 结尾2
-        {
-            path: '/end2',
-            name: 'End2',
-            component: () => import('@/view/home/end2.vue')
-        },
+
+
+
         {
             path: '/cas/login',
             name: 'CasLogin',
